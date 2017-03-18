@@ -6,7 +6,8 @@
   },
   "name": "tabletojson",
   "description": "Converts HTML tables to JSON objects",
-  "version": "0.4.0",
+  "version": "0.5.0",
+  "license": "MIT",
   "main": "./lib/tabletojson.js",
   "keywords": [
     "table2json",
@@ -18,7 +19,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/iaincollins/tabletojson.git"
+    "url": "git://github.com/kingjan1999/tabletojson.git"
+  },
+  "scripts": {
+    "test": "mocha"
   },
   "dependencies": {
     "cheerio": "0.22.0",
@@ -27,5 +31,9 @@
   },
   "engines": {
     "node": "*"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "^11.2.1"
   }
 }

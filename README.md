@@ -1,4 +1,5 @@
 # Table to JSON
+(Forked from [https://github.com/iaincollins/tabletojson](https://github.com/iaincollins/tabletojson))
 
 Attempts to convert HTML tables into JSON.
 
