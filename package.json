@@ -33,7 +33,7 @@
   "dependencies": {
     "cheerio": "0.22.0",
     "q": "1.4.1",
-    "request": "2.79.0"
+    "request": "^2.81.0"
   },
   "engines": {
     "node": "*"
