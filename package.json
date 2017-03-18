@@ -10,7 +10,7 @@
       "url": "http://iaincollins.com"
     }
   ],
-  "name": "table-to-json",
+  "name": "tableasjson",
   "description": "Converts HTML tables to JSON objects (Fork of tabletojson)",
   "version": "0.5.0",
   "license": "MIT",
