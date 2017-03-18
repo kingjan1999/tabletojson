@@ -21,7 +21,7 @@ You might want to use it with a module like 'cheerio' if you want to parse speci
 
 ``` javascript
 // Convert an HTML blob into an array of all the tables on the page
-var tabletojson = require('tabletojson');
+var tabletojson = require('table-to-json');
 var tablesAsJson = tabletojson.convert(html);
 var firstTableAsJson = tablesAsJson[0];
 var secondTableAsJson = tablesAsJson[1];
@@ -30,7 +30,7 @@ var secondTableAsJson = tablesAsJson[1];
 
 ``` javascript
 // Fetch a URL and parse all it's tables into JSON, using a callback
-var tabletojson = require('tabletojson');
+var tabletojson = require('table-to-json');
 var url = 'https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes';
 tabletojson.convertUrl(url, function(tablesAsJson) {
   var listofSovereignStates = tablesAsJson[0];
@@ -39,7 +39,7 @@ tabletojson.convertUrl(url, function(tablesAsJson) {
 
 ``` javascript
 // Fetch a URL and parse all it's tables into JSON, using promises
-var tabletojson = require('tabletojson');
+var tabletojson = require('table-to-json');
 var url = 'http://en.wikipedia.org/wiki/List_of_countries_by_credit_rating';
 tabletojson.convertUrl(url)
 .then(function(tablesAsJson) {
@@ -50,7 +50,7 @@ tabletojson.convertUrl(url)
 
 ``` javascript
 // Fetch a table from Wikipedia and combine with json2csv to convert to CSV
-var tabletojson = require('tabletojson');
+var tabletojson = require('table-to-json');
 var json2csv = require('json2csv');
 var url = 'http://en.wikipedia.org/wiki/List_of_countries_by_credit_rating';
 tabletojson.convertUrl(url)
@@ -80,5 +80,3 @@ tabletojson.convertUrl(url)
 # Contributing
 
 Improvements, fixes and suggestions for better written modules that other people have created are welcome, as are bug reports against specific tables it is unable to handle.
-
-If there is enough interest and I get some examples that I'll improve the code and actually write some tests.

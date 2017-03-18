@@ -1,11 +1,17 @@
 {
   "author": {
-    "name": "Iain Collins",
-    "email": "me@iaincollins.com",
-    "url": "http://iaincollins.com"
+    "name": "Jan Beckmann",
+    "email": "king-jan1999@hotmail.de"
   },
-  "name": "tabletojson",
-  "description": "Converts HTML tables to JSON objects",
+  "contributors": [
+    {
+      "name": "Iain Collins",
+      "email": "me@iaincollins.com",
+      "url": "http://iaincollins.com"
+    }
+  ],
+  "name": "table-to-json",
+  "description": "Converts HTML tables to JSON objects (Fork of tabletojson)",
   "version": "0.5.0",
   "license": "MIT",
   "main": "./lib/tabletojson.js",
@@ -34,7 +40,6 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0",
-    "should": "^11.2.1"
+    "mocha": "^3.2.0"
   }
 }
